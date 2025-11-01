@@ -1,2 +1,32 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/EAyicavM)
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=21411378)
+# Estudiante: Royser Alonsso Villanueva Mamani
+
+---
+
+## 1. Creación de la Aplicación
+
+![image](assets/1.PNG)
+
+---
+
+## 2. Crear las pruebas unitarias necesarias para completar la cobertura de codigo en al menos 80%
+
+
+![image](assets/tests.PNG)
+
+---
+
+![image](assets/prueba1.PNG)
+
+---
+
+## 3. Crear las pruebas en formato BDD
+
+![image](assets/3.PNG)
+
+---
+
+## 4. Crear en Github la automatizacion que permita realizar la ejecucion de las pruebas unitarias y BDD y crear los respectivos reportes y publicarlos en Github Pages
+
+![image](assets/4.PNG)
+
+---
