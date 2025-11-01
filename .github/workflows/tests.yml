@@ -24,45 +24,67 @@ jobs:
     - name: Build
       run: dotnet build --no-restore --configuration Release
       
-    - name: Run Unit Tests with Coverage
+    - name: Install Coverlet
+      run: dotnet tool install --global coverlet.console
+      
+    - name: Run Tests with Coverage
       run: |
-        dotnet test tests/ComputerBuilder.UnitTests/ComputerBuilder.UnitTests.csproj \
+        # Ejecutar todas las pruebas con cobertura
+        dotnet test \
           --configuration Release \
           --no-build \
           --verbosity normal \
-          --logger "trx;LogFileName=unit-tests.trx" \
+          --logger "trx;LogFileName=test-results.trx" \
           --results-directory TestResults \
-          /p:CollectCoverage=true \
-          /p:CoverletOutputFormat=opencover \
-          /p:CoverletOutput=TestResults/coverage.opencover.xml \
-          /p:Exclude="[xunit.*]*"
+          --collect:"XPlat Code Coverage" \
+          -- DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.Format=opencover
           
-    - name: Run BDD Tests
+    - name: Find Coverage Files
       run: |
-        dotnet test tests/ComputerBuilder.BDDTests/ComputerBuilder.BDDTests.csproj \
-          --configuration Release \
-          --no-build \
-          --verbosity normal \
-          --logger "trx;LogFileName=bdd-tests.trx" \
-          --results-directory TestResults
-          
+        echo "Buscando archivos de cobertura..."
+        find . -name "coverage.opencover.xml" -type f
+        find . -name "*.coverage" -type f
+        ls -la TestResults/
+        
     - name: Install Report Generator
       run: dotnet tool install -g dotnet-reportgenerator-globaltool
       
     - name: Generate Coverage Report
       run: |
-        reportgenerator \
-          -reports:./**/TestResults/coverage.opencover.xml \
-          -targetdir:./CoverageReport \
-          -reporttypes:HtmlInline_AzurePipelines
-          
+        # Buscar el archivo de cobertura
+        COVERAGE_FILE=$(find . -name "coverage.opencover.xml" -type f | head -1)
+        
+        if [ -z "$COVERAGE_FILE" ]; then
+          echo "No se encontró archivo coverage.opencover.xml, buscando alternativas..."
+          COVERAGE_FILE=$(find . -name "*.coverage" -type f | head -1)
+        fi
+        
+        if [ -n "$COVERAGE_FILE" ]; then
+          echo "Generando reporte desde: $COVERAGE_FILE"
+          reportgenerator \
+            -reports:"$COVERAGE_FILE" \
+            -targetdir:./CoverageReport \
+            -reporttypes:HtmlInline_AzurePipelines
+        else
+          echo "ERROR: No se encontró ningún archivo de cobertura"
+          # Crear un reporte vacío para que no falle el deploy
+          mkdir -p CoverageReport
+          echo "<html><body><h1>No coverage data available</h1></body></html>" > CoverageReport/index.html
+        fi
+        
     - name: Upload Test Results
       uses: actions/upload-artifact@v4
       with:
         name: test-results
         path: |
           TestResults/
-          CoverageReport/
+        retention-days: 30
+        
+    - name: Upload Coverage Report
+      uses: actions/upload-artifact@v4
+      with:
+        name: coverage-report
+        path: CoverageReport/
         retention-days: 30
         
     - name: Deploy to GitHub Pages
