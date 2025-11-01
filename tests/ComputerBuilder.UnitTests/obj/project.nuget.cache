@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "umkqAg2Sjtg=",
+  "dgSpecHash": "/bMsljFAUu4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\Desktop\\examencalidad\\examen-si784-2024-ii-u2-royservillanueva2004\\tests\\ComputerBuilder.UnitTests\\ComputerBuilder.UnitTests.csproj",
+  "projectFilePath": "C:\\Users\\HP\\Desktop\\examencalidad\\examen-2025-ii-si784-u2-royservillanueva2004\\tests\\ComputerBuilder.UnitTests\\ComputerBuilder.UnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.codecoverage\\17.8.0\\microsoft.codecoverage.17.8.0.nupkg.sha512",

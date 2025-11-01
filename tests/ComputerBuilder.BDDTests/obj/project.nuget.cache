@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "74P+7+nvDY4=",
+  "dgSpecHash": "eC0ziaCenxk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\Desktop\\examencalidad\\examen-si784-2024-ii-u2-royservillanueva2004\\tests\\ComputerBuilder.BDDTests\\ComputerBuilder.BDDTests.csproj",
+  "projectFilePath": "C:\\Users\\HP\\Desktop\\examencalidad\\examen-2025-ii-si784-u2-royservillanueva2004\\tests\\ComputerBuilder.BDDTests\\ComputerBuilder.BDDTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\gherkin\\5.0.0\\gherkin.5.0.0.nupkg.sha512",
