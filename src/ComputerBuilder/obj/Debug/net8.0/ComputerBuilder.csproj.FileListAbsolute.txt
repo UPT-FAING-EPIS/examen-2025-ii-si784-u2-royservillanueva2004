@@ -1,0 +1,12 @@
+C:\Users\HP\Desktop\examencalidad\examen-si784-2024-ii-u2-royservillanueva2004\src\ComputerBuilder\bin\Debug\net8.0\ComputerBuilder.deps.json
+C:\Users\HP\Desktop\examencalidad\examen-si784-2024-ii-u2-royservillanueva2004\src\ComputerBuilder\bin\Debug\net8.0\ComputerBuilder.dll
+C:\Users\HP\Desktop\examencalidad\examen-si784-2024-ii-u2-royservillanueva2004\src\ComputerBuilder\bin\Debug\net8.0\ComputerBuilder.pdb
+C:\Users\HP\Desktop\examencalidad\examen-si784-2024-ii-u2-royservillanueva2004\src\ComputerBuilder\obj\Debug\net8.0\ComputerBuilder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\examencalidad\examen-si784-2024-ii-u2-royservillanueva2004\src\ComputerBuilder\obj\Debug\net8.0\ComputerBuilder.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\examencalidad\examen-si784-2024-ii-u2-royservillanueva2004\src\ComputerBuilder\obj\Debug\net8.0\ComputerBuilder.AssemblyInfo.cs
+C:\Users\HP\Desktop\examencalidad\examen-si784-2024-ii-u2-royservillanueva2004\src\ComputerBuilder\obj\Debug\net8.0\ComputerBuilder.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\examencalidad\examen-si784-2024-ii-u2-royservillanueva2004\src\ComputerBuilder\obj\Debug\net8.0\ComputerBuilder.sourcelink.json
+C:\Users\HP\Desktop\examencalidad\examen-si784-2024-ii-u2-royservillanueva2004\src\ComputerBuilder\obj\Debug\net8.0\ComputerBuilder.dll
+C:\Users\HP\Desktop\examencalidad\examen-si784-2024-ii-u2-royservillanueva2004\src\ComputerBuilder\obj\Debug\net8.0\refint\ComputerBuilder.dll
+C:\Users\HP\Desktop\examencalidad\examen-si784-2024-ii-u2-royservillanueva2004\src\ComputerBuilder\obj\Debug\net8.0\ComputerBuilder.pdb
+C:\Users\HP\Desktop\examencalidad\examen-si784-2024-ii-u2-royservillanueva2004\src\ComputerBuilder\obj\Debug\net8.0\ref\ComputerBuilder.dll
